@@ -1,7 +1,7 @@
 import { toast } from "react-toastify";
 
 export const useDefaultToastEmitter = () => {
-  return toast("🦄 Wow so easy!", {
+  return toast("🦄 useDefaultToastEmitter!", {
     position: "top-right",
     autoClose: 5000,
     hideProgressBar: false,
@@ -19,7 +19,7 @@ export default function DefaultToastEmitter() {
       <button
         onClick={(e) => {
           e.preventDefault();
-          toast("🦄 Wow so easy!", {
+          toast("🦄 DefaultToastEmitter!", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,

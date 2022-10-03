@@ -2,7 +2,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function DefaultToast() {
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast("DefaultToast!");
 
   return (
     <div className="container">
