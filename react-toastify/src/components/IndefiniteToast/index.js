@@ -1,16 +1,25 @@
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
-function IndefiniteToast() {
-  const notify = () => toast("Wow so easy!");
-
+export default function IndefiniteToast() {
   return (
     <div className="container">
-      <h1>Indefinite Toast</h1>
-      <button onClick={notify}>Notify!</button>
-      <ToastContainer />
+      <h1>IndefiniteToast</h1>
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          toast("🦄 IndefiniteToast!", {
+            position: "top-right",
+            autoClose: false,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }}
+      >
+        Notify!
+      </button>
     </div>
   );
 }
-
-export default IndefiniteToast;
